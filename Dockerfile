@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:latest
 
 
 
@@ -8,7 +8,7 @@ RUN apt-get update && \
 apt-get -y install ca-certificates apt-transport-https software-properties-common curl wget gnupg2 lsb-release apt-transport-https && \
 add-apt-repository ppa:ondrej/php -y
 RUN apt-get update && \
-apt-get -y install libaio1 libaio-dev supervisor git apache2 curl mysql-server php libapache2-mod-php8.1 php-mbstring php-mysql php-curl php-gd && \
+apt-get -y install libaio1 libaio-dev supervisor git apache2 curl mysql-server php libapache2-mod-php8.3 php8.3-mysql php8.3-imap php8.3-ldap php8.3-xml php8.3-curl php8.3-mbstring php8.3-zip && \
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 
