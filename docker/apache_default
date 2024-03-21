@@ -13,8 +13,6 @@ Options FollowSymLinks
 AllowOverride None
 </Directory>
 
-
-
 <Directory /var/www/html>
 # Options Indexes FollowSymLinks MultiViews
 # To make wordpress .htaccess work
